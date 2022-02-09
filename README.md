@@ -2,12 +2,11 @@
 
 # OOP school library
 
-> Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow a you to:
+> Imagine that I am the librarian of OOP University, and I need a tool to record what books are in the library and who borrows them. The app that I create will allow to:
 
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
-
 
 ## Built With
 
@@ -31,8 +30,6 @@ bundle install
 rubocop
 
 rubocop -A
-
-
 
 ```
 
