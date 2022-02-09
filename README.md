@@ -1,8 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Ruby Enumerable
+# OOP school library
 
-> This project uses Ruby as a module inside the class. we create a class MyList and a module MyEnumerable.
+> Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow a you to:
+
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
 
 
 ## Built With
@@ -18,9 +22,17 @@ To get a local copy up and running follow these simple example steps.
 Clone the project by using terminal:
 
 ```
-git clone git@github.com:RolandM99/ruby-enumerable.git
+git clone git@github.com:aakbarkhan/school-library.git
 
-ruby main.rb
+cd into school-liberary
+
+bundle install
+
+rubocop
+
+rubocop -A
+
+
 
 ```
 
@@ -36,18 +48,6 @@ ruby main.rb
 - LinkedIn: [[LinkedIn]](https://www.linkedin.com/in/akuu-khan/)
   
 
-👤 **[ishimwezachee](https://github.com/ishimwezachee)**
-
-- GitHub: [@zachee-ishimwe](https://github.com/ishimwezachee)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zachee-ishimwe/)
-  
-  
-👤 **[RolandM99](https://github.com/RolandM99)**
-
-- GitHub: [@RolandM99](https://github.com/RolandM99)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/roland-mweze)
-
-
 
 ## 🤝 Contributing
 
@@ -61,8 +61,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- This project built in Microverse's second module's last week.
-- Original design idea by Nelson Sakwa on Behance.
+- This project built in Microverse's fourth module's third week.
 
 ## 📝 License
 
