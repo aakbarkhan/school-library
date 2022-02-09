@@ -37,3 +37,10 @@ class Person
         @age = age
     end
   end
+
+  person1 = Person.new(24, "Zachee")
+  puts person1.age
+  puts person1.name
+  person1.age = 23
+  puts person1.age
+
