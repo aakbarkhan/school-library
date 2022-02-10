@@ -12,6 +12,3 @@ class Student < Person
     "¯\(ツ)/¯"
   end
 end
-
-# st = Student.new(10, 'Aku')
-# p st.play_hooky

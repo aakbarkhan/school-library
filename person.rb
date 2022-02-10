@@ -32,6 +32,3 @@ class Person
     @age >= 18
   end
 end
-
-# st = Person.new(22,"goodMorning")
-# p st.validate_name
