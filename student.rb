@@ -13,5 +13,5 @@ class Student < Person
   end
 end
 
-st = Student.new(10, 'Aku')
-p st.play_hooky
+# st = Student.new(10, 'Aku')
+# p st.play_hooky
