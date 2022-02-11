@@ -1,13 +1,13 @@
+require_relative './person'
+
 class Rental
   attr_accessor :date, :book, :person
 
   def initialize(date, book, person)
     @date = date
-
-    @book = book
-    book.rentals.push(self) unless self
-
     @person = person
-    person.rentals.push(self) unless self
+    person.rental << self
+    @book = book
+    book.rentals << self
   end
 end

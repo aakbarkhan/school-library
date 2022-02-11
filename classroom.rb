@@ -1,15 +1,16 @@
-require_relative 'student'
-
+require './student'
+require './person'
 class Classroom
-  attr_accessor :label, :students
+  attr_accessor :label
+  attr_reader :students
 
-  def intitialize(label)
+  def initialize(label)
     @label = label
     @students = []
   end
 
-  def add_student(student)
-    @student.push(student) unless @students.include?(student)
+  def add_students(student)
+    @students.push(student)
     student.classroom = self
   end
 end
