@@ -61,13 +61,14 @@ class App
 
   def list_all_books
     puts 'There is no book. Please Add a Book!' if @books.length.zero?
-    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+  
+    @books.each { |book, i| puts "#{i} Title: #{book.title}, Author: #{book.author}" }
     sleep 1
   end
 
   def list_all_people
     puts 'There is no person. Please Add a Person!' if @people.length.zero?
-    @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    @people.map { |person, index| puts "#{index} [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
     sleep 1
   end
 
@@ -137,11 +138,11 @@ class App
 
   def create_rental
     puts 'Select a book from the following list by number'
-    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+    @books.each { |book, index| puts "#{index} Title: #{book.title}, Author: #{book.author}" }
     book_i = gets.chomp.to_i
-    puts
+
     puts 'Select a person from the following list by number (not ID)'
-    @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    @people.map { |person, index| puts "#{index} [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
     person_i = gets.chomp.to_i
     puts
     print 'Date: '
@@ -158,6 +159,7 @@ class App
 
     puts 'Rentals:'
     @rentals.each do |rental|
+      puts @rentals[0].
       puts "Date: #{rental.date}, Book '#{rental.book.title}' by #{rental.book.author}" if rental.person.id == id
     end
     sleep 1

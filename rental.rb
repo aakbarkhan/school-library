@@ -3,9 +3,11 @@ class Rental
 
   def initialize(date, book, person)
     @date = date
+
     @book = book
-    book.rentals << self
+    book.rentals.push(self) unless self
+
     @person = person
-    person.rentals << self
+    person.rentals.push(self) unless self
   end
 end
