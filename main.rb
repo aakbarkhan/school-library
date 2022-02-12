@@ -4,6 +4,7 @@ require_relative 'book'
 require_relative 'classroom'
 require_relative 'teacher'
 require_relative 'rental'
+require 'pry'
 
 class App
   def initialize
@@ -128,6 +129,7 @@ class App
     author = gets.chomp
 
     book = Book.new(title, author)
+    binding.pry
     @books << book
 
     puts 'Book added successfully'
