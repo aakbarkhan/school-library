@@ -143,4 +143,3 @@ def list_rentals_by_person_id
   end
   sleep 0.5
 end
-
