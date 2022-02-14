@@ -13,34 +13,6 @@ class App
     @rentals = []
   end
 
-  def start
-    puts
-    puts '       *************MySchoolLibrary************  '
-    puts '             ==============================          '
-    puts '                Welcome to School Library!'
-    loop do
-      menu
-      option = gets.chomp
-      break if option == '7'
-
-      option_output option
-    end
-    puts 'Thanks for using our system!'
-  end
-
-  def menu
-    puts
-    puts 'Please choose an option by entering a number: '
-    puts '    1 - List all books'
-    puts '    2 - List all people'
-    puts '    3 - Create a person'
-    puts '    4 - Create a book'
-    puts '    5 - Create a rental'
-    puts '    6 - List all rentals for a given person id'
-    puts '    7 - Exit'
-    puts '**********************************************'
-  end
-
   def option_output(option)
     case option
     when '1'
@@ -129,8 +101,9 @@ class App
     author = gets.chomp
 
     book = Book.new(title, author)
-    binding.pry
+    # puts book
     @books << book
+    binding.pry
 
     puts 'Book added successfully'
     sleep 0.5
@@ -171,9 +144,3 @@ def list_rentals_by_person_id
   sleep 0.5
 end
 
-def main
-  app = App.new
-  app.start
-end
-
-main
